@@ -1,0 +1,259 @@
+:root {
+    --main-orange: rgb(250, 148, 22);
+    --main-dark: rgb(48, 47, 46);
+}
+
+body {
+    font-family: 'Manjari', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+
+.info {
+    background-color: var(--main-dark);
+}
+
+.info a {
+    color: var(--main-orange);
+    font-size: .85rem;
+}
+
+.jumbotron {
+    height: 40vh;
+    margin-bottom: 0;
+    background: url('https://source.unsplash.com/VQpOgh5R68I') center no-repeat; 
+    width: 100%;
+    background-size: 100%;
+}
+
+a {
+    color: var(--main-orange);
+}
+a:hover {
+    color: var(--main-orange);
+}
+
+/* NAV */
+
+.navbar {
+    background-color: var(--main-dark);
+    text-transform: uppercase;
+}
+.navbar .nav-link {
+    color: var(--main-orange);
+}
+
+.navbar-toggler { 
+    border-color: var(--main-orange); 
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(250, 148, 22)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.dropdown-menu {
+    background: var(--main-dark);
+}
+.dropdown-item {
+    color: var(--main-orange);
+}
+.dropdown-item:hover {
+    background-color: var(--main-dark);
+    color: var(--main-orange);
+    text-decoration: underline;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--main-dark);
+    color: var(--main-orange);
+    height: 30vh;
+    font-size: .8rem;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: .95rem;
+}
+
+.footer .container {
+    height: 100%;
+}
+
+.fb {
+    color: var(--main-orange);
+}
+.fb:visited {
+    color: var(--main-orange);
+}
+
+.madeby {
+    background-color: var(--main-dark);
+    color: var(--main-orange);
+}
+
+.madeby p {
+    font-size: .9rem;
+}
+
+/* MAIN INDEX */
+/* MAIN CONTACT */
+/* MAIN SKI */
+/* KLIMMEN MAIN */
+/* INTRODUCTIE MAIN */
+/* KLETTERSTEIG MAIN */
+/* TOP IT MAIN */
+
+.intro {
+    font-size: 1rem;
+    padding: 8% 3rem 10% 0;
+    height: 100%;
+}
+
+.link {
+    text-align: center;
+}
+
+.link a{
+    font-size: 1.2rem;
+    color: var(--main-orange);
+    background-color: var(--main-dark);
+    padding: .5rem;
+    margin: 0 auto;
+}
+
+.tijden h2 {
+    font-size: 1.1rem!important;
+}
+
+.contact h2, .home h3, .klimmen h2, .bc h2, .introductie h2, .kletter h2, .topit h2, .boulderen h2, .mtb h2, .boog h2, .ski h2, .kp h2, .bedrijf h2, .scholen h2, .verhuur h2 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.contact p {
+    font-size: .90rem;
+}
+
+.extra p, .home p, .klimmen p, .bc p, .introductie p, .kletter p, .topit p, .boulderen p, .mtb p, .boog p, .ski p, .kp p, .bedrijf p, .scholen p, .verhuur p {
+    font-size: .95rem;
+    letter-spacing: .03rem;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+table tr {
+    font-size: .90rem;
+}
+
+#klein {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+/* MAIN BC */
+
+.custom-hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--main-orange), rgba(0, 0, 0, 0));
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .jumbotron {
+        height: 30vh;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    .intro {
+        padding: 10%;
+        text-align: center;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .tijden {
+        text-align: center;
+    }
+    .tijden hr {
+        width: 55%;
+    }
+
+    p {
+        line-height: 1.7rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .footer {
+        font-size: .85rem;
+        line-height: 1.3rem;
+    }
+    .footer h5 {
+        font-size: 1rem;
+    }
+
+    .contact p, .extra p, .home p, .klimmen p, .bc p, .introductie p, .kletter p, .topit p, .boulderen p, .mtb p, .boog p, .ski p, .kp p, .bedrijf p, .scholen p, .verhuur p {
+        text-align: center;
+    }
+
+    .contact h2, .home h3, .klimmen h2, .bc h2, .introductie h2, .kletter h2, .topit h2, .boulderen h2, .mtb h2, .boog h2, .ski h2, .kp h2, .bedrijf h2, .scholen h2, .verhuur h2 {
+        text-align: center;
+    }
+
+    .kp-info li {
+        list-style: none;
+        text-align: center;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .intro {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .extra p, .home p, .klimmen p, .bc p, .introductie p, .kletter p, .topit p, .boulderen p, .mtb p, .boog p, .ski p, .kp p, .bedrijf p, .scholen p, .verhuur p {
+        font-size: .90rem;
+        letter-spacing: .03rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .tijden ul li {
+        font-size: 0.95rem;
+    }
+}
